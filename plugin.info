@@ -1,0 +1,9 @@
+{
+	"title": "$:/themes/welford/phasersonkill",
+	"name": "PhasersOnKill",
+	"author": "James.W.Anderson",
+	"core-version": ">=5.0.0",
+	"plugin-type": "theme",
+	"description": "customized version of Seamless by Jeremy Ruston",
+	"dependents": ["$:/themes/tiddlywiki/vanilla"]
+}
