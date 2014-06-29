@@ -1,0 +1,13 @@
+title: $:/themes/welford/phasersonkill/ThemeTweaks
+tags: $:/tags/ControlPanel/Appearance
+caption: Theme Tweaks
+
+You can tweak certain aspects of the ''PhasersOnKill'' theme.
+
+//Take care to preserve any backticks (&#96;) in the settings//
+
+! Sizes
+
+* Header Height: <$edit-text tiddler="$:/themes/welford/phasersonkill/metrics" index="headerheight" default="" tag="input"/>
+* Menu Width: <$edit-text tiddler="$:/themes/welford/phasersonkill/metrics" index="menuwidth" default="" tag="input"/>
+

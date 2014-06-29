@@ -1,0 +1,8 @@
+created: 20140629173226803
+modified: 20140629173456183
+tags: $:/tags/PageTemplate
+title: PageTop
+type: text/vnd.tiddlywiki
+
+<div class="tw-pagetop"><b>{{$:/SiteTitle}}</b></div>
+<div class="tw-pagetop mobile-only"><b>{{$:/SiteTitle}}</b> mobile</div>

@@ -1,4 +1,4 @@
-title: $:/themes/tiddlywiki/seamless/base
+title: $:/themes/welford/phasersonkill/base
 tags: [[$:/tags/stylesheet]]
 list-after: $:/themes/tiddlywiki/vanilla/base
 
@@ -59,6 +59,19 @@ Rules copied from Snow White
 Seamless modifications
 */
 
+/* mobile desktop differences */
+
+@media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics##storywidth}}) 
+{
+	.sidebar-header{ 
+	display:none;
+	}	
+	.mobile-only{ 
+	display:inline;
+	}
+}
+
+
 @media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics##storywidth}}) {
 
 	/* Drop the tiddler frame padding */
@@ -68,7 +81,12 @@ Seamless modifications
 
 	/* Move the sidebar up so that the title lines up */
 	body.tw-body .tw-sidebar-scrollable {
-		padding: 43px 0 28px 42px;
+		left : auto;
+		margin:0;
+		top:{{$:/themes/welford/phasersonkill/metrics##headerheight}};
+		width:{{$:/themes/welford/phasersonkill/metrics##menuwidth}};
+		padding: 0 0 0 10px;
+		background-color:#eee;
 	}
 
 	/* Stop the tiddler info panel from bleeding into the tiddler frame padding */
@@ -80,6 +98,11 @@ Seamless modifications
 	body.tw-body .tw-message-box {
 		margin: 21px 0 21px 0;
 	}
+
+	/* Hode mobile only stuff */
+	.mobile-only{ 
+	display:none;
+	}	
 
 }
 
@@ -100,4 +123,53 @@ body.tw-body .tw-page-controls svg {
 /* Adjust the colour of the sidebar selected tabs */
 body.tw-body .tw-sidebar-lists .tw-tab-buttons button.tw-tab-selected {
 	background-color: <<colour background>>;
+}
+
+/* tiddler titles  */
+.tw-tiddler-title {
+border-bottom: 1px solid #000;
+}
+.title {
+float:left;
+}
+
+/* page header */
+.tw-pagetop { 
+ background : #222 !important; /* as background */
+ height:{{$:/themes/welford/phasersonkill/metrics##headerheight}};
+ line-height:{{$:/themes/welford/phasersonkill/metrics##headerheight}};
+ padding-left: 5px;
+ position : fixed;
+ top : 0px;
+ left : 0px;
+ width: 100%;
+ z-index: 99;
+}
+.tw-pagetop b { color:#e00; font-size:1.1em;}
+
+.story-river {  position: fixed;
+ top:{{$:/themes/welford/phasersonkill/metrics##headerheight}};
+ width: auto; 
+ right: {{$:/themes/welford/phasersonkill/metrics##menuwidth}};
+ left: 0px;
+ padding: 0px 10px 0px 10px;
+ margin: 0;
+ background-color:#fff; }
+
+ .tw-tiddler-frame {
+ width:100%;
+}
+
+ /* make everything beflow the top bar */
+ /* this is a hack */
+ /*top:-{{$:/themes/welford/phasersonkill/metrics##headerheight}};*/
+span.tw-topbar-right { 
+ margin-top:10px;
+ top:auto;
+}
+
+html {
+ padding: 0;
+ margin: 0;
+ height: 0px;
 }
