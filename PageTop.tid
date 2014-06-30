@@ -5,4 +5,14 @@ title: PageTop
 type: text/vnd.tiddlywiki
 
 <div class="tw-pagetop"><b>{{$:/SiteTitle}}</b></div>
-<div class="tw-pagetop mobile-only"><b>{{$:/SiteTitle}}</b> mobile</div>
+	<div class="tw-pagetop mobile-only">
+	<b>{{$:/SiteTitle}}</b> 
+
+	<$edit-text tiddler="$:/temp/search" type="search" tag="input"/>
+	<$reveal state="$:/temp/search" type="nomatch" text="">
+	<$linkcatcher to="$:/temp/search">
+	<$link to="" class="btn-invisible">{{$:/core/images/close-button}}</$link>
+	</$linkcatcher>
+	</$reveal>
+
+</div>

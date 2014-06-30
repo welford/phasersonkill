@@ -59,18 +59,52 @@ Rules copied from Snow White
 Seamless modifications
 */
 
-/* mobile desktop differences */
+/* page header */
+.tw-pagetop { 
+ background : #222 !important; /* as background */
+ height:{{$:/themes/welford/phasersonkill/metrics##headerheight}};
+ line-height:{{$:/themes/welford/phasersonkill/metrics##headerheight}};
+ padding-left: 5px;
+ position : fixed;
+ top : 0px;
+ left : 0px;
+ width: 100%;
+ z-index: 99;
+}
+
+.tw-pagetop b { color:#e00; font-size:1.1em;}
+
+.story-river {  position: absolute;
+ top:{{$:/themes/welford/phasersonkill/metrics##headerheight}};
+ width: auto;  
+ left: 0px;
+ padding: 0px 10px 0px 10px;
+ margin: 0;
+ background-color:#fff; height:100%;}
+
+.tw-tiddler-frame {
+ width:100%;
+}
+
+
+/* small screen differences */
 
 @media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics##storywidth}}) 
 {
+	body.tw-body .tw-tiddler-frame {
+		padding: 0;
+	}
 	.sidebar-header{ 
 	display:none;
 	}	
 	.mobile-only{ 
 	display:inline;
 	}
+	.story-river { 	 
+	 right: 0px;	 	 }
 }
 
+/* larger screen differences */
 
 @media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics##storywidth}}) {
 
@@ -81,6 +115,7 @@ Seamless modifications
 
 	/* Move the sidebar up so that the title lines up */
 	body.tw-body .tw-sidebar-scrollable {
+		position: fixed;
 		left : auto;
 		margin:0;
 		top:{{$:/themes/welford/phasersonkill/metrics##headerheight}};
@@ -88,6 +123,8 @@ Seamless modifications
 		padding: 0 0 0 10px;
 		background-color:#eee;
 	}
+
+	.story-river { 	 right: {{$:/themes/welford/phasersonkill/metrics##menuwidth}};	 	 }
 
 	/* Stop the tiddler info panel from bleeding into the tiddler frame padding */
 	body.tw-body .tw-tiddler-info {
@@ -133,41 +170,6 @@ border-bottom: 1px solid #000;
 float:left;
 }
 
-/* page header */
-.tw-pagetop { 
- background : #222 !important; /* as background */
- height:{{$:/themes/welford/phasersonkill/metrics##headerheight}};
- line-height:{{$:/themes/welford/phasersonkill/metrics##headerheight}};
- padding-left: 5px;
- position : fixed;
- top : 0px;
- left : 0px;
- width: 100%;
- z-index: 99;
-}
-.tw-pagetop b { color:#e00; font-size:1.1em;}
-
-.story-river {  position: absolute;
- top:{{$:/themes/welford/phasersonkill/metrics##headerheight}};
- width: auto; 
- right: {{$:/themes/welford/phasersonkill/metrics##menuwidth}};
- left: 0px;
- padding: 0px 10px 0px 10px;
- margin: 0;
- background-color:#fff; height:100%; }
-
- .tw-tiddler-frame {
- width:100%;
-}
-
- /* make everything beflow the top bar */
- /* this is a hack */
- /*top:-{{$:/themes/welford/phasersonkill/metrics##headerheight}};*/
-span.tw-topbar-right { 
- margin-top:10px;
- top:auto;
-}
-
 html {
  padding: 0;
  margin: 0;
@@ -175,3 +177,12 @@ html {
 
 /* stop the p tags form adding unwanted padding at the stop of the story river */
 .tw-dropzone p { margin:0px; padding:0px;}
+
+/* hide the reveal stuff for the sidebar*/
+span.tw-topbar {display:none;}
+
+/* Adjust the colour of the quick search controls */
+.tw-pagetop svg {
+	fill: red;
+}
+.tw-pagetop .tw-reveal {	padding: 0; margin: 0;}
