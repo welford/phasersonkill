@@ -147,14 +147,14 @@ float:left;
 }
 .tw-pagetop b { color:#e00; font-size:1.1em;}
 
-.story-river {  position: fixed;
+.story-river {  position: absolute;
  top:{{$:/themes/welford/phasersonkill/metrics##headerheight}};
  width: auto; 
  right: {{$:/themes/welford/phasersonkill/metrics##menuwidth}};
  left: 0px;
  padding: 0px 10px 0px 10px;
  margin: 0;
- background-color:#fff; }
+ background-color:#fff; height:100%; }
 
  .tw-tiddler-frame {
  width:100%;
@@ -171,5 +171,7 @@ span.tw-topbar-right {
 html {
  padding: 0;
  margin: 0;
- height: 0px;
 }
+
+/* stop the p tags form adding unwanted padding at the stop of the story river */
+.tw-dropzone p { margin:0px; padding:0px;}
