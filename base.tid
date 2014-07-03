@@ -176,13 +176,13 @@ html {
 }
 
 /* stop the p tags form adding unwanted padding at the stop of the story river */
-.tw-dropzone p { margin:0px; padding:0px;}
+.tw-dropzone p { margin:0px; padding:0px; display: inline;}
+.story-river p { padding: 0px; margin: 0px; display: inline;}
 
 /* hide the reveal stuff for the sidebar*/
 span.tw-topbar {display:none;}
 
 /* Adjust the colour of the quick search controls */
-.tw-pagetop svg {
-	fill: red;
-}
-.tw-pagetop .tw-reveal {	padding: 0; margin: 0;}
+.tw-pagetop svg { fill: red; }
+
+.mobile-only .tw-reveal .tw-search-results { padding: 0; margin: 0; border-top: 1px dashed grey; border-bottom: 1px dashed grey;}
