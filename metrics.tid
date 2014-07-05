@@ -3,3 +3,4 @@ type: application/x-tiddler-dictionary
 
 headerheight: `30px`
 menuwidth: `300px`
+sidebarcolour: `#eee`

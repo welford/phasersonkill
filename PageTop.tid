@@ -14,5 +14,14 @@ type: text/vnd.tiddlywiki
 	<$link to="" class="btn-invisible">{{$:/core/images/close-button}}</$link>
 	</$linkcatcher>
 	</$reveal>
+</div>
 
+<div class="mobile-only">
+1234567890
+<$reveal state="$:/temp/search" type="nomatch" text="">
+<div class="tw-search-results">
+{{$:/language/Search/Matches}}
+<$list filter="[!is[system]search{$:/temp/search}sort[title]limit[250]]" template="$:/core/ui/ListItemTemplate"/>
+</div>
+</$reveal>
 </div>
