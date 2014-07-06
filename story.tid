@@ -1,0 +1,10 @@
+created: 20140629173226803
+modified: 20140629173456183
+tags: $:/tags/PageTemplate
+title: $:/core/ui/PageTemplate/story
+type: text/vnd.tiddlywiki
+
+<div class="smallscreen-only hacky-buffer">{{$:/themes/welford/phasersonkill/SearchResults}}</div>
+<section class="story-river">
+<$list filter="[list[$:/StoryList]]" history="$:/HistoryList" template="$:/core/ui/ViewTemplate" editTemplate="$:/core/ui/EditTemplate" storyview={{$:/view}} />
+</section>

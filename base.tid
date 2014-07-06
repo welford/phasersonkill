@@ -56,27 +56,25 @@ Rules copied from Snow White
 }
 
 /*
-Seamless modifications
+PhaserOnKill Stuff
 */
 
 /* page header */
 .tw-pagetop { 
  background : #222 !important; /* as background */
- height:{{$:/themes/welford/phasersonkill/metrics##headerheight}};
- line-height:{{$:/themes/welford/phasersonkill/metrics##headerheight}};
- vertical-align: middle;
- padding-left: 5px;
- position : fixed;
+ height:{{$:/themes/welford/phasersonkill/metrics##headerheight}}; 
+ padding-left: 5px; 
  top : 0px;
  left : 0px;
  width: 100%;
  z-index: 99;
  overflow:hidden;
+ position:fixed;
 }
 
 .tw-pagetop b { color:#e00; font-size:1.1em;}
 
-.story-river {  position: absolute;
+.story-river {  
  top:{{$:/themes/welford/phasersonkill/metrics##headerheight}};
  width: auto;  
  left: 0px;
@@ -93,17 +91,10 @@ Seamless modifications
 
 @media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics##storywidth}}) 
 {
-	body.tw-body .tw-tiddler-frame {
-		padding: 0;
-	}
-	.sidebar-header{ 
-	display:none;
-	}	
-	.mobile-only{ 
-	display:inline;
-	}
-	.story-river { 	 
-	 right: 0px;	 	 }
+	body.tw-body .tw-tiddler-frame {padding: 0;	}
+	.sidebar-header		{ display:none;}	
+	.largescreen-only	{ display:none; }
+	.story-river		{ position:relative; }	
 }
 
 /* larger screen differences */
@@ -126,22 +117,22 @@ Seamless modifications
 		background-color:#eee;
 	}
 
-	.story-river { 	 right: {{$:/themes/welford/phasersonkill/metrics##menuwidth}};	 	 }
+	.tw-pagetop { 
+		line-height:{{$:/themes/welford/phasersonkill/metrics##headerheight}};
+		vertical-align:middle;
+	}
+
+	.story-river { right: {{$:/themes/welford/phasersonkill/metrics##menuwidth}}; }
 
 	/* Stop the tiddler info panel from bleeding into the tiddler frame padding */
-	body.tw-body .tw-tiddler-info {
-		margin: 0;
-	}
+	body.tw-body .tw-tiddler-info { margin: 0; }
 
 	/* Stop message boxes from bleeding into the tiddler frame padding */
-	body.tw-body .tw-message-box {
-		margin: 21px 0 21px 0;
-	}
+	body.tw-body .tw-message-box { margin: 21px 0 21px 0; }
 
-	/* Hode mobile only stuff */
-	.mobile-only{ 
-	display:none;
-	}	
+	/* Hide smallscreen only stuff */
+	.smallscreen-only	{ display:none;}
+	.story-river		{ position: absolute;}	
 
 }
 
@@ -168,9 +159,6 @@ body.tw-body .tw-sidebar-lists .tw-tab-buttons button.tw-tab-selected {
 .tw-tiddler-title {
 border-bottom: 1px solid #000;
 }
-.title {
-float:left;
-}
 
 html {
 padding: 0;
@@ -184,7 +172,7 @@ margin: 0;
 /* hide the reveal stuff for the sidebar*/
 span.tw-topbar {display:none;}
 
-/* color and size of controls in topbar for mobile version */
+/* color and size of controls in topbar for smallscreen version */
 .tw-pagetop svg {
 padding:0;
 margin:0; 
@@ -194,7 +182,7 @@ height:{{$:/themes/welford/phasersonkill/metrics##headerheight}};
 vertical-align:middle;
 }
 
-.mobile-only .tw-reveal .tw-search-results { 
+.smallscreen-only .tw-reveal .tw-search-results { 
 padding: 0;
 margin: 0;
 border-top: 1px dashed grey;
@@ -206,6 +194,12 @@ left : 0px;
 width: 100%;
 z-index: 99;
 }
+
+.hacky-buffer .tw-reveal .tw-search-results { 
+position : relative;
+top : {{$:/themes/welford/phasersonkill/metrics##headerheight}};
+}
+.smallscreen-only .tw-reveal {display : block;}
 
 .tw-pagetop-search  svg { float: right; 
 width:{{$:/themes/welford/phasersonkill/metrics##headerheight}};
