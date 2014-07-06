@@ -64,12 +64,14 @@ Seamless modifications
  background : #222 !important; /* as background */
  height:{{$:/themes/welford/phasersonkill/metrics##headerheight}};
  line-height:{{$:/themes/welford/phasersonkill/metrics##headerheight}};
+ vertical-align: middle;
  padding-left: 5px;
  position : fixed;
  top : 0px;
  left : 0px;
  width: 100%;
  z-index: 99;
+ overflow:hidden;
 }
 
 .tw-pagetop b { color:#e00; font-size:1.1em;}
@@ -171,19 +173,26 @@ float:left;
 }
 
 html {
- padding: 0;
- margin: 0;
+padding: 0;
+margin: 0;
 }
 
 /* stop the p tags form adding unwanted padding at the stop of the story river */
 .tw-dropzone p { margin:0px; padding:0px; }
-.story-river p { padding: 0px; margin: 0px; display: inline;}
+.story-river p { padding: 0px; margin: 0px; }
 
 /* hide the reveal stuff for the sidebar*/
 span.tw-topbar {display:none;}
 
-/* Adjust the colour of the quick search controls */
-.tw-pagetop svg { fill: red; }
+/* color and size of controls in topbar for mobile version */
+.tw-pagetop svg {
+padding:0;
+margin:0; 
+fill:red;
+width:{{$:/themes/welford/phasersonkill/metrics##headerheight}};
+height:{{$:/themes/welford/phasersonkill/metrics##headerheight}};
+vertical-align:middle;
+}
 
 .mobile-only .tw-reveal .tw-search-results { 
 padding: 0;
@@ -196,4 +205,9 @@ top : {{$:/themes/welford/phasersonkill/metrics##headerheight}};
 left : 0px;
 width: 100%;
 z-index: 99;
+}
+
+.tw-pagetop-search  svg { float: right; 
+width:{{$:/themes/welford/phasersonkill/metrics##headerheight}};
+height:{{$:/themes/welford/phasersonkill/metrics##headerheight}};
 }

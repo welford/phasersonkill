@@ -1,0 +1,14 @@
+created: 20140629173226803
+modified: 20140629173456183
+tags: $:/tags/PageTemplate
+title: $:/themes/welford/phasersonkill/SearchResults
+type: text/vnd.tiddlywiki
+
+<$reveal state="$:/temp/search" type="nomatch" text="">
+<div class="tw-search-results">
+<$reveal state="$:/temp/search" type="nomatch" text=""><span class="tw-pagetop-search"><$linkcatcher to="$:/temp/search"><$link to="" class="btn-invisible">{{$:/core/images/close-button}}</$link></$linkcatcher></span></$reveal>
+{{$:/language/Search/Matches}} 
+<$list filter="[!is[system]search{$:/temp/search}sort[title]limit[250]]" template="$:/core/ui/ListItemTemplate"/>
+<$reveal state="$:/temp/search" type="nomatch" text=""><$linkcatcher to="$:/temp/search"><$link to="">close search results</$link></$linkcatcher></$reveal>
+</div>
+</$reveal>
