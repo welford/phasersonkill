@@ -3,14 +3,14 @@ modified: 20140629173456183
 title: $:/themes/welford/phasersonkill/SearchResults
 type: text/vnd.tiddlywiki
 
-<$reveal state="$:/temp/search" type="nomatch" text="">
-<div class="tw-search-results">
-<$reveal state="$:/temp/search" type="nomatch" text=""><span class="tw-pagetop-search"><$linkcatcher to="$:/temp/search"><$link to="" class="btn-invisible">{{$:/core/images/close-button}}</$link></$linkcatcher></span></$reveal>
-{{$:/language/Search/Matches}} 
+<$reveal state="$:/temp/topsearch" type="nomatch" text="">
+<$scrollable class='tw-scrollable tw-search-results'>
+<small><$count filter="[!is[system]search{$:/temp/topsearch}]"/> matches</small>
 <!-- TWexe stuff first -->
-<$list filter="[!is[system]search{$:/temp/search}tag[$:/tags/twexe]sort[title]limit[250]]" template="$:/themes/welford/phasersonkill/TWexeTemplate"/>
-<!-- Normal Search Second stuff first -->
-<$list filter="[!is[system]search{$:/temp/search}!tag[$:/tags/twexe]sort[title]limit[250]]" template="$:/core/ui/ListItemTemplate"/>
-<$reveal state="$:/temp/search" type="nomatch" text=""><$linkcatcher to="$:/temp/search"><$link to="">close search results</$link></$linkcatcher></$reveal>
-</div>
+<$list filter="[!is[system]search{$:/temp/topsearch}tag[$:/tags/twexe]sort[title]limit[20]]" template="$:/themes/welford/phasersonkill/TWexeTemplate"/>
+<!-- Normal Search Second stuff first (includes -->
+<$list filter="[!is[system]search{$:/temp/topsearch}sort[title]limit[250]]" template="$:/core/ui/ListItemTemplate"/>
+<small class="displayblock"><$linkcatcher to="$:/temp/topsearch"><$link to="">close search results</$link></$linkcatcher></small>
+</$scrollable>
+<span class="tw-pagetop-close-search"><$linkcatcher to="$:/temp/topsearch"><$link to="" class="btn-invisible">{{$:/core/images/close-button}}</$link></$linkcatcher></span>
 </$reveal>

@@ -4,15 +4,13 @@ tags: $:/tags/PageTemplate
 title: $:/themes/welford/phasersonkill/PageTop
 type: text/vnd.tiddlywiki
 
-<div class="tw-pagetop largescreen-only"><b>{{$:/SiteTitle}}</b></div>
-
-<div class="tw-pagetop smallscreen-only">
+<div class="tw-pagetop">
 	<b>{{$:/SiteTitle}}</b> 
-	<$edit-text tiddler="$:/temp/search" type="search" tag="input"/>
+	<$edit-text tiddler="$:/temp/topsearch" type="search" tag="input"/>
 	<$list filter="[all[shadows+tiddlers]tag[$:/tags/PageControls]!has[draft.of]]" variable="listItem">
 		<$transclude tiddler=<<listItem>> mode="inline"/>
 	</$list>
 </div>
-<div class="smallscreen-only">
+<div class="special-search">
 {{$:/themes/welford/phasersonkill/SearchResults}}
 </div>
