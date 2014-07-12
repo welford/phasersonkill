@@ -1,5 +1,7 @@
 title: $:/themes/welford/phasersonkill/metrics/
 
+headerfontcolour: #F00
+headerbgcolour: #333
 headerheight: 30px
 menuwidth: 300px
 border: 20px

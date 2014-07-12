@@ -4,6 +4,6 @@
 	"author": "James.W.Anderson",
 	"core-version": ">=5.0.0",
 	"plugin-type": "theme",
-	"description": "customized version of Seamless by Jeremy Ruston",
+	"description": "custom theme based on Seamless",
 	"dependents": ["$:/themes/tiddlywiki/vanilla"]
 }
