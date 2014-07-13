@@ -173,6 +173,8 @@ body.tw-body .tw-tiddler-frame	{ padding: 0; }
 	max-height: {{$:/themes/welford/phasersonkill/metrics/searchheight}};
 }
 
+.topsearchform  { display:inline; padding:0; margin:0;}
+
 /* 
 small screen differences 
 */
