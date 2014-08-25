@@ -116,7 +116,7 @@ body.tw-body .tw-sidebar-lists .tw-tab-buttons button.tw-tab-selected {
 
 /* tiddler titles  */
 .tw-tiddler-title {
-border-bottom: 1px solid #000;
+border-bottom: 1px solid {{$:/themes/welford/phasersonkill/metrics/titlebordercolour}};
 }
 
 /* stop the p tags form adding unwanted padding at the stop of the story river */
@@ -127,7 +127,7 @@ border-bottom: 1px solid #000;
 span.tw-topbar {display:none;}
 
 /* color and size of controls in topbar for smallscreen version */
-.tw-pagetop svg {
+.tw-pagetop svg.tw-image-button {
 padding:0;
 margin:0; 
 fill:red;
@@ -142,9 +142,9 @@ top : {{$:/themes/welford/phasersonkill/metrics/headerheight}};
 left : 0px;	
 padding: 0px 10px 0px 10px;
 margin: 0;
-
 background: #eee;
 z-index: 99;
+box-shadow: 0px 10px 30px #666;
 }
 
 .hacky-buffer .tw-reveal{ display: block; }
@@ -205,7 +205,7 @@ larger screen differences
 		top:{{$:/themes/welford/phasersonkill/metrics/headerheight}};
 		width:{{$:/themes/welford/phasersonkill/metrics/menuwidth}};
 		padding: 0 0 0 10px;
-		background-color:#eee;
+		background-color:{{$:/themes/welford/phasersonkill/metrics/sidebarcolour}};
 	}
 
 	.tw-pagetop { 

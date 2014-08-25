@@ -4,13 +4,19 @@ tags: $:/tags/PageTemplate
 title: $:/themes/welford/phasersonkill/PageTop
 type: text/vnd.tiddlywiki
 
+\define config-title()
+$:/config/PageControlButtons/Visibility/$(listItem)$
+\end
 <div class="tw-pagetop">
 	<b>{{$:/SiteTitle}}</b> 
 	<$edit-text tiddler="$:/temp/topsearch" type="search" tag="input" accesskey="q" id="topsearch" />
 	<$list filter="[all[shadows+tiddlers]tag[$:/tags/PageControls]!has[draft.of]]" variable="listItem">
-		<$transclude tiddler=<<listItem>> mode="inline"/>
+		<$reveal type="nomatch" state=<<config-title>> text="hide">
+			<$transclude tiddler=<<listItem>> mode="inline"/>
+		</$reveal>
 	</$list>
 </div>
+
 <div class="special-search">
 {{$:/themes/welford/phasersonkill/SearchResults}}
 </div>
