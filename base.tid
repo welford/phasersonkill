@@ -75,6 +75,7 @@ div.tw-pagetop {
  vertical-align:middle;
  line-height:{{$:/themes/welford/phasersonkill/metrics/headerheight}}; 
  opacity:0.93;
+ box-shadow: #ccc 0px 1px 5px;
 }
 
 .tw-pagetop b { color:{{$:/themes/welford/phasersonkill/metrics/headerfontcolour}}; font-size:1.1em;}
