@@ -8,3 +8,4 @@ border: 20px
 searchheight: 200px
 sidebarcolour: transparent
 titlebordercolour: #eee
+sidebarbreakpoint: 960px

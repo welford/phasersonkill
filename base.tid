@@ -181,7 +181,7 @@ body.tw-body .tw-tiddler-frame	{ padding: 0 20px 0 0; }
 small screen differences 
 */
 
-@media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}} ) 
+@media (max-width: {{$:/themes/welford/phasersonkill/metrics/sidebarbreakpoint}} ) 
 {
 	.sidebar-header		{ display:none;}	
 	.largescreen-only	{ display:none; }	
@@ -196,7 +196,7 @@ small screen differences
 larger screen differences 
 */
 
-@media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
+@media (min-width: {{$:/themes/welford/phasersonkill/metrics/sidebarbreakpoint}}) {
 
 	/* Move the sidebar up so that the title lines up */
 	body.tw-body .tw-sidebar-scrollable {

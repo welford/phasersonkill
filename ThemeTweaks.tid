@@ -16,3 +16,4 @@ You can tweak certain aspects of the ''PhasersOnKill'' theme.
 * Search height: <$edit-text tiddler="$:/themes/welford/phasersonkill/metrics/searchheight" default="" tag="input"/>
 * Side Bar Colour: <$edit-text tiddler="$:/themes/welford/phasersonkill/metrics/sidebarcolour" default="" tag="input"/>
 * Title Border Colour: <$edit-text tiddler="$:/themes/welford/phasersonkill/metrics/titlebordercolour" default="" tag="input"/>
+* Sidebar Break Point: <$edit-text tiddler="$:/themes/welford/phasersonkill/metrics/sidebarbreakpoint" default="" tag="input"/>
