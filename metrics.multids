@@ -1,10 +1,10 @@
 title: $:/themes/welford/phasersonkill/metrics/
 
 headerfontcolour: #F00
-headerbgcolour: #333
+headerbgcolour: #eee
 headerheight: 30px
-menuwidth: 300px
+menuwidth: 450px
 border: 20px
 searchheight: 200px
-sidebarcolour: #eee
+sidebarcolour: transparent
 titlebordercolour: #eee
