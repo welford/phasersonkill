@@ -204,14 +204,13 @@ larger screen differences
 
 	/* Move the sidebar up so that the title lines up */
 	body.tw-body .tw-sidebar-scrollable {
-		position: inherit;
+		position: fixed;
 		left : auto;
 		margin:0;
 		top:{{$:/themes/welford/phasersonkill/metrics/headerheight}};
 		width:{{$:/themes/welford/phasersonkill/metrics/menuwidth}};
 		padding: 0 0 0 20px;
 		background-color:{{$:/themes/welford/phasersonkill/metrics/sidebarcolour}};
-		float:right;
 	}
 
 	.tw-pagetop { 
@@ -241,4 +240,12 @@ larger screen differences
 
 	/* width with sidebar shown */
 	body.tw-body .tw-tiddler-frame	{ padding: 0 20px 0 0; }
+}
+
+@media (min-width: {{$:/themes/welford/phasersonkill/metrics/maxwidth}}) {
+	/* above max width don't move the sidebar anymore */
+	body.tw-body .tw-sidebar-scrollable {		
+		background-color:red;
+		left: calc({{$:/themes/welford/phasersonkill/metrics/maxwidth}} - {{$:/themes/welford/phasersonkill/metrics/menuwidth}});
+	}
 }
