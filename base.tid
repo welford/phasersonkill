@@ -245,7 +245,6 @@ larger screen differences
 @media (min-width: {{$:/themes/welford/phasersonkill/metrics/maxwidth}}) {
 	/* above max width don't move the sidebar anymore */
 	body.tw-body .tw-sidebar-scrollable {		
-		background-color:red;
 		left: calc({{$:/themes/welford/phasersonkill/metrics/maxwidth}} - {{$:/themes/welford/phasersonkill/metrics/menuwidth}});
 	}
 }
