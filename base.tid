@@ -95,8 +95,10 @@ div.tw-pagetop {
 
 
 /* Use the tiddler background colour for the page background */
+html {max-width:{{$:/themes/welford/phasersonkill/metrics/maxwidth}};}
+
 html body.tw-body {
-	background-color: <<colour background>>;
+	background-color: <<colour background>>;	
 }
 
 html:-webkit-full-screen {
@@ -168,7 +170,6 @@ margin-top:5px;
 
 .smallscreen-only .tw-reveal	{display : block;}
 .displayblock					{display : block;}
-body.tw-body .tw-tiddler-frame	{ padding: 0 20px 0 0; }
 
 
 .tw-scrollable {	
@@ -190,6 +191,9 @@ small screen differences
 		right: {{$:/themes/welford/phasersonkill/metrics/menuwidth}}; 
 		opacity:0.93;
 	}		
+
+	/* width with sidebar no shown */
+	body.tw-body .tw-tiddler-frame	{ padding: 0; }
 }
 
 /* 
@@ -200,13 +204,14 @@ larger screen differences
 
 	/* Move the sidebar up so that the title lines up */
 	body.tw-body .tw-sidebar-scrollable {
-		position: fixed;
+		position: inherit;
 		left : auto;
 		margin:0;
 		top:{{$:/themes/welford/phasersonkill/metrics/headerheight}};
 		width:{{$:/themes/welford/phasersonkill/metrics/menuwidth}};
 		padding: 0 0 0 20px;
 		background-color:{{$:/themes/welford/phasersonkill/metrics/sidebarcolour}};
+		float:right;
 	}
 
 	.tw-pagetop { 
@@ -234,9 +239,6 @@ larger screen differences
 	/* Hide smallscreen only stuff */
 	.smallscreen-only	{ display:none;}	
 
-	/*close search button*/	
-	/*.tw-pagetop-close-search  svg { right: calc( {{$:/themes/welford/phasersonkill/metrics/menuwidth}} + {{$:/themes/welford/phasersonkill/metrics/border}} ); }*/
-	/*
-	.tw-pagetop-close-search  svg { display:None; }
-	*/
+	/* width with sidebar shown */
+	body.tw-body .tw-tiddler-frame	{ padding: 0 20px 0 0; }
 }
