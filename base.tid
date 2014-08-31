@@ -8,50 +8,50 @@ list-after: $:/themes/tiddlywiki/vanilla/base
 Rules copied from Snow White---------------------------------------------
 */
 
-.tw-page-controls button svg, .tw-tiddler-controls button svg, .tw-topbar button svg {
+.tc-page-controls button svg, .tc-tiddler-controls button svg, .tc-topbar button svg {
 	<<transition "fill 150ms ease-in-out">>
 }
 
-.tw-tiddler-controls button.tw-selected svg {
+.tc-tiddler-controls button.tc-selected svg {
 	<<filter "drop-shadow(0px -1px 2px rgba(0,0,0,0.25))">>
 }
 
-.tw-drop-down {
+.tc-drop-down {
 	border-radius: 4px;
 	<<box-shadow "2px 2px 10px rgba(0, 0, 0, 0.5)">>
 }
 
-.tw-block-dropdown {
+.tc-block-dropdown {
 	border-radius: 4px;
 	<<box-shadow "2px 2px 10px rgba(0, 0, 0, 0.5)">>
 }
 
-.tw-modal-displayed {
+.tc-modal-displayed {
 	-webkit-filter: blur(4px);
 }
 
-.modal {
+.tc-modal {
 	border-radius: 6px;
 	<<box-shadow "0 3px 7px rgba(0,0,0,0.3)">>
 }
 
-.modal-footer {
+.tc-modal-footer {
 	border-radius: 0 0 6px 6px;
 	<<box-shadow "inset 0 1px 0 #fff">>;
 }
 
-.tw-alert {
+.tc-alert {
 	border-radius: 6px;
 	<<box-shadow "0 3px 7px rgba(0,0,0,0.6)">>
 }
 
-.tw-notification {
+.tc-notification {
 	border-radius: 6px;
 	<<box-shadow "0 3px 7px rgba(0,0,0,0.3)">>
 	text-shadow: 0 1px 0 rgba(255,255,255, 0.8);
 }
 
-.tw-message-box img {
+.tc-message-box img {
 	<<box-shadow "1px 1px 3px rgba(0,0,0,0.5)">>
 }
 
@@ -62,7 +62,7 @@ PhaserOnKill Stuff---------------------------------------------
 blockquote { border-left:2px dashed #DDD; margin-left:12px; }
 
 /* page header */
-div.tw-pagetop { 
+div.tc-pagetop { 
  position:fixed;
  max-height:{{$:/themes/welford/phasersonkill/metrics/headerheight}};
  width: 100%;
@@ -78,9 +78,9 @@ div.tw-pagetop {
  box-shadow: #ccc 0px 1px 5px;
 }
 
-.tw-pagetop b { color:{{$:/themes/welford/phasersonkill/metrics/headerfontcolour}}; font-size:1.1em;}
+.tc-pagetop b { color:{{$:/themes/welford/phasersonkill/metrics/headerfontcolour}}; font-size:1.1em;}
 
-.story-river {
+.tc-story-river {
  width: auto;
  height: 100%;
  left: 0px;
@@ -89,7 +89,7 @@ div.tw-pagetop {
  margin: 0;
  background-color: #fff;}
 
-.tw-tiddler-frame {
+.tc-tiddler-frame {
  width:100%; 
 }
 
@@ -97,7 +97,7 @@ div.tw-pagetop {
 /* Use the tiddler background colour for the page background */
 html {max-width:{{$:/themes/welford/phasersonkill/metrics/maxwidth}};}
 
-html body.tw-body {
+html body.tc-body {
 	background-color: <<colour background>>;	
 }
 
@@ -106,29 +106,29 @@ html:-webkit-full-screen {
 }
 
 /* Adjust the colour of the page controls */
-body.tw-body .tw-page-controls svg {
+body.tc-body .tc-page-controls svg {
 	fill: <<colour muted-foreground>>;
 }
 
 /* Adjust the colour of the sidebar selected tabs */
-body.tw-body .tw-sidebar-lists .tw-tab-buttons button.tw-tab-selected {
+body.tc-body .tc-sidebar-lists .tc-tab-buttons button.tc-tab-selected {
 	background-color: <<colour background>>;
 }
 
 /* tiddler titles  */
-.tw-tiddler-title {
+.tc-tiddler-title {
 border-bottom: 1px solid {{$:/themes/welford/phasersonkill/metrics/titlebordercolour}};
 }
 
 /* stop the p tags form adding unwanted padding at the stop of the story river */
-.tw-dropzone p { margin:0px; padding:0px; }
-.story-river p { padding: 0px; margin: 0px; }
+.tc-dropzone p { margin:0px; padding:0px; }
+.tc-story-river p { padding: 0px; margin: 0px; }
 
 /* hide the reveal stuff for the sidebar*/
-span.tw-topbar {display:none;}
+span.tc-topbar {display:none;}
 
 /* color and size of controls in topbar for smallscreen version */
-.tw-pagetop svg.tw-image-button {
+.tc-pagetop svg.tc-image-button {
 padding:0;
 margin:0; 
 fill:red;
@@ -137,7 +137,7 @@ height:{{$:/themes/welford/phasersonkill/metrics/headerheight}};
 vertical-align:middle;
 }
 
-.special-search .tw-reveal .tw-search-results, .hacky-buffer .tw-reveal .tw-search-results { 
+.special-search .tc-reveal .tc-search-results, .hacky-buffer .tc-reveal .tc-search-results { 
 position : fixed;
 top : {{$:/themes/welford/phasersonkill/metrics/headerheight}};
 left : 0px;	
@@ -149,15 +149,15 @@ box-shadow: 0px 10px 30px  {{$:/themes/welford/phasersonkill/metrics/headerbgcol
 border-top:1px dashed #ddd;
 }
 
-.hacky-buffer .tw-reveal{ display: block; }
-.hacky-buffer .tw-reveal .tw-search-results { position : static;}
+.hacky-buffer .tc-reveal{ display: block; }
+.hacky-buffer .tc-reveal .tc-search-results { position : static;}
 
 .topbar-hack { 
 	height : {{$:/themes/welford/phasersonkill/metrics/headerheight}};
 	position : static;
 }
 
-.tw-pagetop-close-search  svg { 
+.tc-pagetop-close-search  svg { 
 position: fixed;
 top : {{$:/themes/welford/phasersonkill/metrics/headerheight}};
 width:{{$:/themes/welford/phasersonkill/metrics/headerheight}};
@@ -168,11 +168,11 @@ right: {{$:/themes/welford/phasersonkill/metrics/border}};
 margin-top:5px;
 }
 
-.smallscreen-only .tw-reveal	{display : block;}
+.smallscreen-only .tc-reveal	{display : block;}
 .displayblock					{display : block;}
 
 
-.tw-scrollable {	
+.tc-scrollable {	
 	max-height: {{$:/themes/welford/phasersonkill/metrics/searchheight}};
 }
 
@@ -184,16 +184,16 @@ small screen differences
 
 @media (max-width: {{$:/themes/welford/phasersonkill/metrics/sidebarbreakpoint}} ) 
 {
-	.sidebar-header		{ display:none;}	
+	.tc-sidebar-header		{ display:none;}	
 	.largescreen-only	{ display:none; }	
-	.special-search .tw-reveal .tw-search-results, .hacky-buffer .tw-reveal .tw-search-results { 
+	.special-search .tc-reveal .tc-search-results, .hacky-buffer .tc-reveal .tc-search-results { 
 		width: 100%;
 		right: {{$:/themes/welford/phasersonkill/metrics/menuwidth}}; 
 		opacity:0.93;
 	}		
 
 	/* width with sidebar no shown */
-	body.tw-body .tw-tiddler-frame	{ padding: 0; }
+	body.tc-body .tc-tiddler-frame	{ padding: 0; }
 }
 
 /* 
@@ -203,7 +203,7 @@ larger screen differences
 @media (min-width: {{$:/themes/welford/phasersonkill/metrics/sidebarbreakpoint}}) {
 
 	/* Move the sidebar up so that the title lines up */
-	body.tw-body .tw-sidebar-scrollable {
+	body.tc-body .tc-sidebar-scrollable {
 		position: fixed;
 		left : auto;
 		margin:0;
@@ -213,38 +213,40 @@ larger screen differences
 		background-color:{{$:/themes/welford/phasersonkill/metrics/sidebarcolour}};
 	}
 
-	.tw-pagetop { 
+	.tc-pagetop { 
 		/*line-height:{{$:/themes/welford/phasersonkill/metrics/headerheight}};
 		vertical-align:middle;*/
 	}
 
-	.story-river { 
+	.tc-story-river { 
 	 right: {{$:/themes/welford/phasersonkill/metrics/menuwidth}}; 
 	 position: absolute;
 	}	
 
-	.special-search .tw-reveal .tw-search-results, .hacky-buffer .tw-reveal .tw-search-results { 
+	.special-search .tc-reveal .tc-search-results, .hacky-buffer .tc-reveal .tc-search-results { 
 	 width: 100%;
 	 right: {{$:/themes/welford/phasersonkill/metrics/menuwidth}}; 
 	 opacity:0.93;
 	}
 
 	/* Stop the tiddler info panel from bleeding into the tiddler frame padding */
-	body.tw-body .tw-tiddler-info { margin: 0; }
+	body.tc-body .tc-tiddler-info { margin: 0; }
 
 	/* Stop message boxes from bleeding into the tiddler frame padding */
-	body.tw-body .tw-message-box { margin: 21px 0 21px 0; }
+	body.tc-body .tc-message-box { margin: 21px 0 21px 0; }
 
 	/* Hide smallscreen only stuff */
 	.smallscreen-only	{ display:none;}	
 
 	/* width with sidebar shown */
-	body.tw-body .tw-tiddler-frame	{ padding: 0 20px 0 0; }
+	body.tc-body .tc-tiddler-frame	{ padding: 0 20px 0 0; }
 }
 
 @media (min-width: {{$:/themes/welford/phasersonkill/metrics/maxwidth}}) {
 	/* above max width don't move the sidebar anymore */
-	body.tw-body .tw-sidebar-scrollable {		
+	body.tc-body .tc-sidebar-scrollable {		
 		left: calc({{$:/themes/welford/phasersonkill/metrics/maxwidth}} - {{$:/themes/welford/phasersonkill/metrics/menuwidth}});
+		width:auto;
 	}
 }
+button.tc-tag-label, span.tc-tag-label{border-radius:3px;}

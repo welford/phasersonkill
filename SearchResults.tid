@@ -4,7 +4,7 @@ title: $:/themes/welford/phasersonkill/SearchResults
 type: text/vnd.tiddlywiki
 
 <$reveal state="$:/temp/topsearch" type="nomatch" text="">
-<$scrollable class='tw-scrollable tw-search-results'>
+<$scrollable class='tc-scrollable tc-search-results'>
 <small><$count filter="[!is[system]search{$:/temp/topsearch}]"/> matches</small>
 <!-- TWexe stuff first -->
 <$list filter="[!is[system]search{$:/temp/topsearch}tag[$:/tags/twexe]sort[title]limit[20]]" template="$:/themes/welford/phasersonkill/TWexeTemplate"/>
@@ -12,5 +12,5 @@ type: text/vnd.tiddlywiki
 <$list filter="[!is[system]search{$:/temp/topsearch}sort[title]limit[250]]" template="$:/core/ui/ListItemTemplate"/>
 <small class="displayblock"><$linkcatcher to="$:/temp/topsearch"><$link to="">close search results</$link></$linkcatcher></small>
 </$scrollable>
-<span class="tw-pagetop-close-search"><$linkcatcher to="$:/temp/topsearch"><$link to="" class="btn-invisible">{{$:/core/images/close-button}}</$link></$linkcatcher></span>
+<span class="tc-pagetop-close-search"><$linkcatcher to="$:/temp/topsearch"><$link to="" class="btn-invisible">{{$:/core/images/close-button}}</$link></$linkcatcher></span>
 </$reveal>
