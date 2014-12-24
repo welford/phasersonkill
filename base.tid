@@ -126,8 +126,8 @@ border-bottom: 1px solid {{$:/themes/welford/phasersonkill/metrics/titleborderco
 }
 
 /* stop the p tags form adding unwanted padding at the stop of the story river */
-.tc-dropzone p { margin:0px; padding:0px; }
-.tc-story-river p { padding: 0px; margin: 0px; }
+
+.tc-dropzone > p { margin:0px; padding:0px; }
 
 /* hide the reveal stuff for the sidebar*/
 span.tc-topbar {display:none;}
