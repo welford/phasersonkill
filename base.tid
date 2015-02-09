@@ -61,6 +61,8 @@ PhaserOnKill Stuff---------------------------------------------
 
 blockquote { border-left:2px dashed #DDD; margin-left:12px; }
 
+.block-indent { border:none; margin-left:0px; padding-left:15px; }
+
 /* page header */
 div.tc-pagetop { 
  position:fixed;
@@ -127,7 +129,7 @@ border-bottom: 1px solid {{$:/themes/welford/phasersonkill/metrics/titleborderco
 
 /* stop the p tags form adding unwanted padding at the stop of the story river */
 
-.tc-dropzone > p { margin:0px; padding:0px; }
+.tc-dropzone > p,  { margin:0px; padding:0px; }
 
 /* hide the reveal stuff for the sidebar*/
 span.tc-topbar {display:none;}
