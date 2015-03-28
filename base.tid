@@ -102,7 +102,7 @@ div.tc-pagetop {
 
 
 /* Use the tiddler background colour for the page background */
-html {max-width:{{$:/themes/welford/phasersonkill/metrics/maxwidth}};}
+html {}
 
 html body.tc-body {
 	background-color: <<colour background>>;	
@@ -249,11 +249,4 @@ larger screen differences
 	body.tc-body .tc-tiddler-frame	{ padding: 0 20px 0 0; }
 }
 
-@media (min-width: {{$:/themes/welford/phasersonkill/metrics/maxwidth}}) {
-	/* above max width don't move the sidebar anymore */
-	body.tc-body .tc-sidebar-scrollable {		
-		left: calc({{$:/themes/welford/phasersonkill/metrics/maxwidth}} - {{$:/themes/welford/phasersonkill/metrics/menuwidth}});
-		width:auto;
-	}
-}
 button.tc-tag-label, span.tc-tag-label{border-radius:3px;}
