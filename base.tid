@@ -250,3 +250,7 @@ larger screen differences
 }
 
 button.tc-tag-label, span.tc-tag-label{border-radius:3px;}
+
+/* stop the p tags form adding unwanted padding at the stop of the story river */
+
+.ytif > p,  { margin:0px; padding:0px; width:100%;}
