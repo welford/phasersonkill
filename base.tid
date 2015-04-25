@@ -210,7 +210,7 @@ small screen differences
 	}		
 
 	/* width with sidebar no shown */
-	body.tc-body .tc-tiddler-frame	{ padding: 0; }
+	body.tc-body .tc-tiddler-frame	{ padding: 0; }	
 }
 
 /* 
@@ -257,6 +257,9 @@ larger screen differences
 
 	/* width with sidebar shown */
 	body.tc-body .tc-tiddler-frame	{ padding: 0 20px 0 0; }
+
+	/* Hide icons when the screen is large enough */
+	div.search-buttons	{ display: none; }
 }
 
 button.tc-tag-label, span.tc-tag-label{border-radius:3px;}

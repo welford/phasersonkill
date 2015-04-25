@@ -10,7 +10,9 @@ type: text/vnd.tiddlywiki
 <$list filter="[!is[system]search{$:/temp/topsearch}tag[$:/tags/twexe]sort[title]limit[20]]" template="$:/themes/welford/phasersonkill/TWexeTemplate"/>
 
 <!-- buttons next -->
+<div class="search-buttons">
 <$list filter="[all[shadows]search{$:/temp/topsearch}tag[$:/tags/PageControls]sort[title]limit[3]]" template="$:/themes/welford/phasersonkill/ButtonTemplate"/>
+</div>
 
 <!-- Normal search third stuff first -->
 <$list filter="[!is[system]search{$:/temp/topsearch}sort[title]limit[250]]" template="$:/core/ui/ListItemTemplate"/>
