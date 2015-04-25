@@ -144,6 +144,16 @@ height:{{$:/themes/welford/phasersonkill/metrics/headerheight}};
 vertical-align:middle;
 }
 
+/* color and size of controls in topbar for smallscreen version */
+.tc-search-results svg.tc-image-button {
+padding:0;
+margin:0; 
+fill:red;
+width:50px;
+height:{{$:/themes/welford/phasersonkill/metrics/headerheight}};
+vertical-align:middle;
+}
+
 .special-search .tc-reveal .tc-search-results, .hacky-buffer .tc-reveal .tc-search-results { 
 position : fixed;
 top : {{$:/themes/welford/phasersonkill/metrics/headerheight}};
@@ -254,3 +264,5 @@ button.tc-tag-label, span.tc-tag-label{border-radius:3px;}
 /* stop the p tags form adding unwanted padding at the stop of the story river */
 
 .ytif > p,  { margin:0px; padding:0px; width:100%;}
+
+.tc-tag-list-item { margin-right: 0; }

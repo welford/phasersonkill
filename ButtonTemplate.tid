@@ -1,0 +1,8 @@
+created: 20140629173226803
+modified: 20140629173456183
+title: $:/themes/welford/phasersonkill/ButtonTemplate
+type: text/vnd.tiddlywiki
+
+<div>
+<$transclude  mode="inline"/>
+</div>

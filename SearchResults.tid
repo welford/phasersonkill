@@ -8,7 +8,11 @@ type: text/vnd.tiddlywiki
 <small><$count filter="[!is[system]search{$:/temp/topsearch}]"/> matches</small>
 <!-- TWexe stuff first -->
 <$list filter="[!is[system]search{$:/temp/topsearch}tag[$:/tags/twexe]sort[title]limit[20]]" template="$:/themes/welford/phasersonkill/TWexeTemplate"/>
-<!-- Normal Search Second stuff first (includes -->
+
+<!-- buttons next -->
+<$list filter="[all[shadows]search{$:/temp/topsearch}tag[$:/tags/PageControls]sort[title]limit[3]]" template="$:/themes/welford/phasersonkill/ButtonTemplate"/>
+
+<!-- Normal search third stuff first -->
 <$list filter="[!is[system]search{$:/temp/topsearch}sort[title]limit[250]]" template="$:/core/ui/ListItemTemplate"/>
 <small class="displayblock"><$linkcatcher to="$:/temp/topsearch"><$link to="">close search results</$link></$linkcatcher></small>
 </$scrollable>
