@@ -38,8 +38,8 @@ button-foreground:						#222222
 button-border:							transparent
 button-foreground-hover:				<<color linkclrhover>>
 
-code-background:						#f7f7f9
-code-border:							#e1e1e8
+code-background:						#1a1a1a
+code-border:							transparent
 code-foreground:						#dd1144
 dirty-indicator:						#ff0000
 download-background:					#34c734
