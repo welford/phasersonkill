@@ -4,9 +4,9 @@ list-after: $:/themes/tiddlywiki/vanilla/base
 
 \rules only filteredtranscludeinline transcludeinline macrodef macrocallinline
 
-/*
-Rules copied from Snow White---------------------------------------------
-*/
+/*********************************************************************
+Rules copied from Snow White
+**********************************************************************/
 
 .tc-page-controls button svg, .tc-tiddler-controls button svg, .tc-topbar button svg {
 	<<transition "fill 150ms ease-in-out">>
@@ -55,9 +55,17 @@ Rules copied from Snow White---------------------------------------------
 	<<box-shadow "1px 1px 3px rgba(0,0,0,0.5)">>
 }
 
-/*
-PhaserOnKill Stuff---------------------------------------------
-*/
+/*********************************************************************
+Phasersonkill stuff
+**********************************************************************/
+
+.tc-more-sidebar > .tc-tab-set > .tc-tab-buttons > button {
+	border:	none;
+}
+
+.tc-btn-dropdown{
+	color: red;
+}
 
 blockquote { border-left:2px dashed #DDD; margin-left:12px; }
 
@@ -65,39 +73,45 @@ blockquote { border-left:2px dashed #DDD; margin-left:12px; }
 
 /* page header */
 div.tc-pagetop { 
- position:fixed;
- max-height:{{$:/themes/welford/phasersonkill/metrics/headerheight}};
- width: 100%;
- top : 0px;
- left : 0px;
- padding-left: 5px;  
- z-index: 98;
- background : {{$:/themes/welford/phasersonkill/metrics/headerbgcolour}}; !important; /* as background */
- overflow:hidden;
- vertical-align:middle;
- line-height:{{$:/themes/welford/phasersonkill/metrics/headerheight}}; 
- opacity:0.93;
- box-shadow: #ccc 0px 1px 5px;
+	position:			fixed;
+	max-height:			{{$:/themes/welford/phasersonkill/metrics/headerheight}};
+	width:				100%;
+	top :				0px;
+	left :				0px;
+	padding-left:		5px;  
+	z-index:			98;
+	background :		<<colour pagetop-background>> !important; /* as background */
+	overflow:			hidden;
+	vertical-align:		middle;
+	line-height:		{{$:/themes/welford/phasersonkill/metrics/headerheight}}; 
+	opacity:			0.93;
+	<<box-shadow "0 1px 5px #151515">>
 }
 
-.tc-pagetop b { color:{{$:/themes/welford/phasersonkill/metrics/headerfontcolour}}; font-size:1.1em;}
+div.tc-pagetop > span
+{
+	fill:				red;
+}
+
+.tc-pagetop b { color:<<colour headerclr>>; font-size:1.1em;}
 
 .tc-story-river {
- width: auto;
- height: 100%;
- left: 0px;
- top: {{$:/themes/welford/phasersonkill/metrics/headerheight}};
- padding: 0px 10px 0px 10px;
- margin: 0;
- background-color: #fff;}
+	width:				auto;
+	height:				100%;
+	left:				0px;
+	top:				{{$:/themes/welford/phasersonkill/metrics/headerheight}};
+	padding:			0px 10px 0px 10px;
+	margin:				0;
+	background-color:	<<color background>>;
+}
 
 .tc-tiddler-frame .tc-tiddler-body {
-	font-size: {{$:/themes/tiddlywiki/vanilla/metrics/fontsize}};
-	line-height: {{$:/themes/tiddlywiki/vanilla/metrics/lineheight}};
+	font-size:			{{$:/themes/tiddlywiki/vanilla/metrics/fontsize}};
+	line-height:		{{$:/themes/tiddlywiki/vanilla/metrics/lineheight}};
 }
 
 .tc-tiddler-frame {
- width:100%; 
+	width:				100%; 
 }
 
 
@@ -105,65 +119,53 @@ div.tc-pagetop {
 html {}
 
 html body.tc-body {
-	background-color: <<colour background>>;	
+	background-color:	<<colour background>>;	
 }
 
 html:-webkit-full-screen {
-	background-color: <<colour background>>;
-}
-
-/* Adjust the colour of the page controls */
-body.tc-body .tc-page-controls svg {
-	fill: <<colour muted-foreground>>;
-}
-
-/* Adjust the colour of the sidebar selected tabs */
-body.tc-body .tc-sidebar-lists .tc-tab-buttons button.tc-tab-selected {
-	background-color: <<colour background>>;
+	background-color:	<<colour background>>;
 }
 
 /* tiddler titles  */
 .tc-tiddler-title {
-border-bottom: 1px solid {{$:/themes/welford/phasersonkill/metrics/titlebordercolour}};
+	border-bottom:			1px solid <<colour linesclr>>;
 }
 
 /* stop the p tags form adding unwanted padding at the stop of the story river */
 
-.tc-dropzone > p,  { margin:0px; padding:0px; }
+.tc-dropzone > p,  {	margin:0px; padding:0px; }
 
 /* hide the reveal stuff for the sidebar*/
-span.tc-topbar {display:none;}
+span.tc-topbar {		display:none;	}
 
 /* color and size of controls in topbar for smallscreen version */
 .tc-pagetop svg.tc-image-button {
-padding:0;
-margin:0; 
-fill:red;
-width:{{$:/themes/welford/phasersonkill/metrics/headerheight}};
-height:{{$:/themes/welford/phasersonkill/metrics/headerheight}};
-vertical-align:middle;
+	padding:			0;
+	margin:				0; 
+	width:				{{$:/themes/welford/phasersonkill/metrics/headerheight}};
+	height:				{{$:/themes/welford/phasersonkill/metrics/headerheight}};
+	vertical-align:		middle;
 }
 
 /* color and size of controls in topbar for smallscreen version */
 .tc-search-results svg.tc-image-button {
-padding:0;
-margin:0; 
-fill:red;
-width:50px;
-height:{{$:/themes/welford/phasersonkill/metrics/headerheight}};
-vertical-align:middle;
+	padding:			0;
+	margin:				0; 
+	width:				50px;
+	height:				{{$:/themes/welford/phasersonkill/metrics/headerheight}};
+	vertical-align:		middle;
 }
 
 .special-search .tc-reveal .tc-search-results, .hacky-buffer .tc-reveal .tc-search-results { 
-position : fixed;
-top : {{$:/themes/welford/phasersonkill/metrics/headerheight}};
-left : 0px;	
-padding: 0px 10px 0px 10px;
-margin: 0;
-background:  {{$:/themes/welford/phasersonkill/metrics/headerbgcolour}};
-z-index: 99;
-box-shadow: 0px 10px 30px  {{$:/themes/welford/phasersonkill/metrics/headerbgcolour}};
-border-top:1px dashed #ddd;
+	position:			fixed;
+	top :				{{$:/themes/welford/phasersonkill/metrics/headerheight}};
+	left :				0px;	
+	padding:			0px 10px 0px 10px;
+	margin:				0;
+	background:			<<color pagetop-background>>;
+	z-index:			99;
+	box-shadow:			0px 10px 30px  transparent;
+	border-top:			1px dashed #ddd;
 }
 
 .hacky-buffer .tc-reveal{ display: block; }
@@ -175,14 +177,14 @@ border-top:1px dashed #ddd;
 }
 
 .tc-pagetop-close-search  svg { 
-position: fixed;
-top : {{$:/themes/welford/phasersonkill/metrics/headerheight}};
-width:{{$:/themes/welford/phasersonkill/metrics/headerheight}};
-height:{{$:/themes/welford/phasersonkill/metrics/headerheight}};
-z-index: 99;
-/* close search button */
-right: {{$:/themes/welford/phasersonkill/metrics/border}};
-margin-top:5px;
+	position:			fixed;
+	top :				{{$:/themes/welford/phasersonkill/metrics/headerheight}};
+	width:				{{$:/themes/welford/phasersonkill/metrics/headerheight}};
+	height:				{{$:/themes/welford/phasersonkill/metrics/headerheight}};
+	z-index:			99;
+	/* close search button */
+	right:				{{$:/themes/welford/phasersonkill/metrics/border}};
+	margin-top:			5px;
 }
 
 .smallscreen-only .tc-reveal	{display : block;}
@@ -201,16 +203,17 @@ small screen differences
 
 @media (max-width: {{$:/themes/welford/phasersonkill/metrics/sidebarbreakpoint}} ) 
 {
-	.tc-sidebar-header		{ display:none;}	
-	.largescreen-only	{ display:none; }	
+	.tc-sidebar-header{ display:none;	}
+	.largescreen-only{	display:none;	}
 	.special-search .tc-reveal .tc-search-results, .hacky-buffer .tc-reveal .tc-search-results { 
-		width: 100%;
-		right: {{$:/themes/welford/phasersonkill/metrics/menuwidth}}; 
-		opacity:0.93;
+						width: 100%;
+						right: {{$:/themes/welford/phasersonkill/metrics/menuwidth}}; 
+						opacity:0.93;
 	}		
-
 	/* width with sidebar no shown */
-	body.tc-body .tc-tiddler-frame	{ padding: 0; }	
+	body.tc-body .tc-tiddler-frame{
+						padding: 0; 
+	}	
 }
 
 /* 
@@ -221,29 +224,27 @@ larger screen differences
 
 	/* Move the sidebar up so that the title lines up */
 	body.tc-body .tc-sidebar-scrollable {
-		position: fixed;
-		left : auto;
-		margin:0;
-		top:{{$:/themes/welford/phasersonkill/metrics/headerheight}};
-		width:{{$:/themes/welford/phasersonkill/metrics/menuwidth}};
-		padding: 0 0 0 20px;
-		background-color:{{$:/themes/welford/phasersonkill/metrics/sidebarcolour}};
+		position:			fixed;
+		left :				auto;
+		margin:				0;
+		top:				{{$:/themes/welford/phasersonkill/metrics/headerheight}};
+		width:				{{$:/themes/welford/phasersonkill/metrics/menuwidth}};
+		padding:			0 0 0 20px;
+		background-color:	{{$:/themes/welford/phasersonkill/metrics/sidebarcolour}};
 	}
 
 	.tc-pagetop { 
-		/*line-height:{{$:/themes/welford/phasersonkill/metrics/headerheight}};
-		vertical-align:middle;*/
 	}
 
 	.tc-story-river { 
-	 right: {{$:/themes/welford/phasersonkill/metrics/menuwidth}}; 
-	 position: absolute;
+		right:				{{$:/themes/welford/phasersonkill/metrics/menuwidth}}; 
+		position:			absolute;
 	}	
 
 	.special-search .tc-reveal .tc-search-results, .hacky-buffer .tc-reveal .tc-search-results { 
-	 width: 100%;
-	 right: {{$:/themes/welford/phasersonkill/metrics/menuwidth}}; 
-	 opacity:0.93;
+	 width:					100%;
+	 right:					{{$:/themes/welford/phasersonkill/metrics/menuwidth}}; 
+	 opacity:				0.93;
 	}
 
 	/* Stop the tiddler info panel from bleeding into the tiddler frame padding */

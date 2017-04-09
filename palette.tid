@@ -1,0 +1,147 @@
+created: 20170408195245421
+description: dark custom
+modified: 20170408195248508
+name: phasersonkill
+tags: $:/tags/Palette
+title: $:/palettes/phasersonkill
+type: application/x-tiddler-dictionary
+
+linkclr:								#ee1111
+linkclrhover:							#ff2222
+headerclr:								#ee1111
+linesclr:								#eeeeee
+background:								#222222
+pagetop-background:						#424242
+
+tiddler-editor-background:				#131313
+tiddler-editor-border-image:			#ffffff
+tiddler-editor-border:					#cccccc
+tiddler-editor-fields-even:				transparent
+tiddler-editor-fields-odd:				transparent
+
+page-background:						#090909
+
+site-title-foreground:					<<color linkclr>>
+
+tiddler-title-foreground:				#dddddd
+tiddler-subtitle-foreground:			#ff0000
+
+alert-background:						#ffe476
+alert-border:							#b99e2f
+alert-highlight:						#881122
+alert-muted-foreground:					#b99e2f
+
+blockquote-bar:							<<color muted-foreground>>
+
+button-background:						#d3d3d3
+button-foreground:						#222222
+button-border:							transparent
+button-foreground-hover:				<<color linkclrhover>>
+
+code-background:						#f7f7f9
+code-border:							#e1e1e8
+code-foreground:						#dd1144
+dirty-indicator:						#ff0000
+download-background:					#34c734
+download-foreground:					<<color background>>
+dragger-background:						<<color foreground>>
+dragger-foreground:						<<color background>>
+
+dropdown-background:					<<color pagetop-background>>
+dropdown-border:						#5d5d5d
+dropdown-tab-background-selected:		#ffffff
+dropdown-tab-background:				#ececec
+dropzone-background:					rgba(0,200,0,0.7)
+
+external-link-background-hover:			inherit
+external-link-background-visited:		inherit
+external-link-background:				inherit
+external-link-foreground-hover:			inherit
+external-link-foreground-visited:		#5555aa
+external-link-foreground:				#5555ee
+
+foreground:								#cccccc
+message-background:						#ecf2ff
+message-border:							#cfd6e6
+message-foreground:						#547599
+
+modal-backdrop:							<<color foreground>>
+modal-background:						<<color background>>
+
+modal-border:							#999999
+modal-footer-background:				#f5f5f5
+modal-footer-border:					#dddddd
+modal-header-border:					#eeeeee
+muted-foreground:						<<color linkclr>>
+
+sidebar-muted-foreground-hover:			<<color linkclrhover>>
+sidebar-muted-foreground:				<<color linkclrhover>>
+
+notification-background:				#ffffdd
+notification-border:					#999999
+pre-background:							#f5f5f5
+pre-border:								#cccccc
+primary:								#c00
+
+sidebar-button-foreground:				#222222
+sidebar-controls-foreground-hover:		<<color linkclrhover>>
+
+sidebar-controls-foreground:			#aaaaaa
+sidebar-foreground-shadow:				rgba(255,255,255, 0.8)
+sidebar-foreground:						#acacac
+sidebar-tab-button-border:				red
+sidebar-tab-foreground:					#aaaaaa
+sidebar-tab-background:					#333333
+sidebar-tab-border:						#444444
+sidebar-tab-foreground-selected:		<<color sidebar-tab-background>>
+sidebar-tab-background-selected:		<<color sidebar-tab-foreground>>
+sidebar-tab-border-selected:			<<color sidebar-tab-border>>
+sidebar-tab-divider:					<<color sidebar-tab-border>>
+
+tab-foreground:							<<color sidebar-tab-foreground>>
+tab-background:							<<color sidebar-tab-background>>
+tab-border:								<<color sidebar-tab-border>>
+
+tab-foreground-selected:				<<color sidebar-tab-foreground-selected>>
+tab-background-selected:				<<color sidebar-tab-background-selected>>
+tab-border-selected:					<<color sidebar-tab-border-selected>>
+
+tab-divider:							<<color sidebar-tab-divider>>
+
+sidebar-tiddler-link-foreground-hover:	<<color linkclrhover>>
+sidebar-tiddler-link-foreground:		#999999
+
+static-alert-foreground:				#aaaaaa
+
+table-border:							#dddddd
+table-footer-background:				#a8a8a8
+table-header-background:				#424242
+table-header-foreground:				#bbbbbb
+tag-background:							#ec6
+tag-foreground:							#ffffff
+
+tiddler-background:						<<color background>>
+tiddler-border:							<<color background>>
+
+tiddler-controls-foreground-hover:		<<color linkclrhover>>
+tiddler-controls-foreground-selected:	<<color linkclrhover>>
+tiddler-controls-foreground:			#cdcdcd
+
+tiddler-info-background:				#f8f8f8
+tiddler-info-border:					#dddddd
+tiddler-info-tab-background:			#f8f8f8
+tiddler-link-background:				<<color background>>
+tiddler-link-foreground:				#ee1111
+
+toolbar-new-button:
+toolbar-options-button:
+toolbar-save-button:
+toolbar-info-button:
+toolbar-edit-button:
+toolbar-close-button:
+toolbar-delete-button:
+toolbar-cancel-button:
+toolbar-done-button:
+
+untagged-background: #999999
+very-muted-foreground: #888888
