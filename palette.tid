@@ -6,22 +6,22 @@ tags: $:/tags/Palette
 title: $:/palettes/phasersonkill
 type: application/x-tiddler-dictionary
 
-linkclr:								#ee1111
+linkclr:								#7aa0e6
 linkclrhover:							#ff2222
 headerclr:								#ee1111
-linesclr:								#eeeeee
+linesclr:								#dddddd
 background:								#222222
 pagetop-background:						#424242
 
-tiddler-editor-background:				#131313
+tiddler-editor-background:				#181818
 tiddler-editor-border-image:			#ffffff
-tiddler-editor-border:					#cccccc
+tiddler-editor-border:					#505050
 tiddler-editor-fields-even:				transparent
 tiddler-editor-fields-odd:				transparent
 
 page-background:						#090909
 
-site-title-foreground:					<<color linkclr>>
+site-title-foreground:					#ee1111
 
 tiddler-title-foreground:				#dddddd
 tiddler-subtitle-foreground:			#ff0000
@@ -56,9 +56,10 @@ dropzone-background:					rgba(0,200,0,0.7)
 external-link-background-hover:			inherit
 external-link-background-visited:		inherit
 external-link-background:				inherit
-external-link-foreground-hover:			inherit
-external-link-foreground-visited:		#5555aa
-external-link-foreground:				#5555ee
+
+external-link-foreground-hover:			#7aa0e6
+external-link-foreground-visited:		#7aa0e6
+external-link-foreground:				#7aa0e6
 
 foreground:								#cccccc
 message-background:						#ecf2ff
@@ -69,18 +70,18 @@ modal-backdrop:							<<color foreground>>
 modal-background:						<<color background>>
 
 modal-border:							#999999
-modal-footer-background:				#f5f5f5
+modal-footer-background:				#424242
 modal-footer-border:					#dddddd
 modal-header-border:					#eeeeee
-muted-foreground:						<<color linkclr>>
+muted-foreground:						<<color foreground>>
 
 sidebar-muted-foreground-hover:			<<color linkclrhover>>
 sidebar-muted-foreground:				<<color linkclrhover>>
 
 notification-background:				#ffffdd
 notification-border:					#999999
-pre-background:							#f5f5f5
-pre-border:								#cccccc
+pre-background:							#424242
+pre-border:								transparent
 primary:								#c00
 
 sidebar-button-foreground:				#222222

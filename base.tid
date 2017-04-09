@@ -1,6 +1,5 @@
 title: $:/themes/welford/phasersonkill/base
 tags: [[$:/tags/Stylesheet]]
-list-after: $:/themes/tiddlywiki/vanilla/base
 
 \rules only filteredtranscludeinline transcludeinline macrodef macrocallinline
 
@@ -56,8 +55,19 @@ Rules copied from Snow White
 }
 
 /*********************************************************************
-Phasersonkill stuff
+Phasersonkill stuff LIVE
 **********************************************************************/
+
+input, textarea {
+	border: 2px solid #292929;
+}
+
+hr {
+	border-bottom: none;
+	border-right: none;
+	border-left: none;
+	border-top: 1px solid #999999;
+}
 
 .tc-more-sidebar > .tc-tab-set > .tc-tab-buttons > button {
 	border:	none;
