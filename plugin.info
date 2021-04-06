@@ -5,5 +5,6 @@
 	"core-version": ">=5.0.0",
 	"plugin-type": "theme",
 	"description": "custom theme based on Seamless",
-	"dependents": ["$:/themes/tiddlywiki/vanilla"]
+	"dependents": ["$:/themes/tiddlywiki/vanilla"],
+	"list": "readme"
 }
